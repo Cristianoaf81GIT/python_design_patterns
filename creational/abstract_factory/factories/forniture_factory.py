@@ -1,4 +1,10 @@
-from interfaces import AbstractFactory, Sofa, CoffeTable, Chair #pyright: ignore
+from interfaces import (  # pyright: ignore
+    AbstractFactory,
+    Sofa,
+    CoffeTable,
+    Chair,
+)
+
 
 class FornitureFactory(AbstractFactory):
 
@@ -7,7 +13,6 @@ class FornitureFactory(AbstractFactory):
     def __init__(self, factory: AbstractFactory) -> None:
         super().__init__()
         self._factory = factory
-
 
     def create_sofa(self) -> Sofa:
         return self._factory.create_sofa()
@@ -21,4 +26,3 @@ class FornitureFactory(AbstractFactory):
     @property
     def factory(self) -> AbstractFactory:
         return self._factory
-
