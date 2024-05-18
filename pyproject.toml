@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "design-patterns"
+version = "0.1.0"
+description = "python3 design patterns examples"
+authors = ["Cristianoaf81GIT <cristianoaf81@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rsa = "^4.9"
+pydantic = {extras = ["email"], version = "^2.7.1"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
