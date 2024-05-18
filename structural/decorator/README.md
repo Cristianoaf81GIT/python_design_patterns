@@ -1,4 +1,4 @@
-# Adapter, Como implementar  
+# Decorator, Como implementar  
 1 - Certifique-se que seu domínio de negócio pode ser representado como um componente primário com múltiplas camadas opcionais sobre ele.  
 
 2 - Descubra quais métodos são comuns tanto para o componente primário e para as camadas opcionais. Crie uma interface componente e declare aqueles métodos ali.
